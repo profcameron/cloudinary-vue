@@ -27,7 +27,7 @@ This will start a server on your computer on port 5173.
 
 ## What are the important files?
 | FILE | Description |
-----------------------
+|-|-|
 | .env | Contains the cloud name and upload settings |
 | src/App.vue | Main Vue file; contains link to Cloudinary view and Cloudinary CSS settings |
 | .src/views/CloudView.vue | Central view that collates the Cloudinary components (right now, only upload component is added) - the view isn't required, but it helps modularize it |
