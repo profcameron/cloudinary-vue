@@ -5,7 +5,6 @@
 </template>
 
 <script>
-//import cloudService from '@/services/CloudService';
 
 export default {
     name: 'CloudinaryUploadComponent',

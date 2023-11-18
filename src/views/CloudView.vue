@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import CloudUploadComponent from '../components/CloudUploadComponent.vue'
+import CloudUploadComponent from '@/components/CloudUploadComponent.vue'
 
 export default {
   name: 'CloudView',
