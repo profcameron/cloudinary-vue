@@ -1,12 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/cloud">Cloudinary</router-link>
+    <router-link to="/">Cloudinary</router-link>
   </header>
 
   <RouterView />
@@ -16,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  font-size: 2em;
 }
 
 .logo {
@@ -76,7 +75,6 @@ nav a:first-of-type {
 
 .cloud{
   border: 3px solid purple;
-  height: 200px;
   vertical-align: center;
 }
 

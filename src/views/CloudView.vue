@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Demonstration of some Cloudinary features</h1>
+    <h1>Demonstration of Cloudinary Features</h1>
     <cloud-upload-component />
   </div>
 </template>
@@ -12,7 +12,7 @@ import CloudUploadComponent from '@/components/CloudUploadComponent.vue'
 export default {
   name: 'CloudView',
   components: {
-    CloudUploadComponent
+    CloudUploadComponent,
   },
   data(){
       return{
@@ -23,4 +23,3 @@ export default {
   
 }
 </script>
-
