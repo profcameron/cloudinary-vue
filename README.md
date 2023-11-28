@@ -23,6 +23,7 @@ The main change you need to make is to the file **.env** in the main root direct
 After you clone this from Git, open the folder in Visual Studio Code. Open a Terminal window and run **npm install** (this only needs to be done once for the project). 
 
 You can start the Vite web server by running **npm run dev** 
+
 This will start a server on your computer on port 5173. 
 
 ## What are the important files?
