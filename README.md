@@ -16,8 +16,8 @@ In order to run this, there are a few pre-requisites. This should be platform-in
 
 ## What changes do you need to make?
 The main change you need to make is to the file **.env** in the main root directory. This contains environment variables. I created two that are important:
-* **VITE_CLOUDINARY_CLOUD_NAME** : You can acquire this by signing up for a free account at Cloudinary. This indicates the cloud name you are using (basically, a folder). Unless you are doing extra work on the back-end to handle signed uploads, you can safely ignore the API Key and API Secret values. You can access this from the [Cloudinary Account Settings](https://console.cloudinary.com/settings/account) page. Note: a free account is limited, and you can only have a single cloud name per account. The cloud name can be copied and pasted, it will be a short character string. 
-* **VITE_CLOUDINARY_CLOUD_UPLOAD** : You can choose to set certain options (in our case, the main thing to set is "unsigned" - [but there are a ton of cool features to explore](https://cloudinary.com/documentation/upload_presets) )! This will be a short character string.
+* **VITE_CLOUDINARY_CLOUD_NAME** : You can acquire this by signing up for a free account at Cloudinary. This indicates the cloud name you are using (basically, a folder). Unless you are doing extra work on the back-end to handle signed uploads, you can safely ignore the API Key and API Secret values. You can access this from the [Cloudinary Account Settings](https://console.cloudinary.com/settings/account) page. Note: a free account is limited, and you can only have a single cloud name per account. The cloud name can be copied and pasted, it will be a short character string. This is left blank in my .env file; it must be replaced by your cloud name. 
+* **VITE_CLOUDINARY_CLOUD_UPLOAD** : You can choose to set certain options (in our case, the main thing to set is "unsigned" - [but there are a ton of cool features to explore](https://cloudinary.com/documentation/upload_presets) )! This will be a short character string. This cloud upload string can be left as is.
  
 ## How do you run it?
 After you clone this from Git, open the folder in Visual Studio Code. Open a Terminal window and run **npm install** (this only needs to be done once for the project). 
@@ -29,7 +29,7 @@ This will start a server on your computer on port 5173.
 ## What are the important files?
 | FILE | Description |
 |-|-|
-| [.env](.env) | Contains the cloud name and upload settings |
+| [.env](.env) | Contains the cloud name and upload settings; this must be updated in order for this code to work |
 | [src/App.vue](src/App.vue) | Main Vue file; contains link to Cloudinary view and Cloudinary CSS settings |
 | [src/views/CloudView.vue](src/views/CloudView.vue) | Central view that collates the Cloudinary components (right now, only upload component is added) - the view isn't required, but it helps modularize it |
 | [src/components/CloudUploadComponent.vue](src/components/CloudUploadComponent.vue) | The code to handle the Cloudinary upload |
