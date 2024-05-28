@@ -1,7 +1,7 @@
 # Cloudinary Vue Demo
 
 ## Purpose
-In the final capstones for Tech Elevator, I've encountered groups that use the Cloudinary API for image uploading. I found there were a few points of confusion (primarily, whether you needed to use npm to install Cloudinary packages or not). I also wanted to play around with Vue 3 (the curriculum has just switched over, so we're using Vite now).
+In the final capstones when I was teaching at Tech Elevator, I encountered groups that use the Cloudinary API for image uploading. I found there were a few points of confusion (primarily, whether you needed to use npm to install Cloudinary packages or not). I also wanted to play around with Vue 3 (the curriculum had just switched over as I wrote this).
 
 I chose to implement this without the npm install, and also chose to use the unsigned upload option. It would definitely be more secure to use the signed version, but that would require setting up an endpoint on a server application, and I wanted to keep this focused on the front-end.
 
